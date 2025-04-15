@@ -28,4 +28,9 @@ export class AppComponent {
   isActive(route: string): boolean {
     return this.router.url === route;
   }
+
+
+  isLoginRoute(): boolean {
+    return this.router.url === '/login';
+  }
 }

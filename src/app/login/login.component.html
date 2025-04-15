@@ -1,0 +1,28 @@
+<div style="display: flex; height: 100vh;">
+    <!-- Left section with centered image -->
+    <div style="background: #102c4f; height: 100vh; width: 50%; display: flex; justify-content: center; align-items: center;">
+      <img src="../../assets/Infotel_Logo.png" style="max-width: 80%; height: auto;" />
+    </div>
+
+    <!-- Right section with form -->
+    <div style="width: 50%; padding: 50px;display: flex;justify-content: center;flex-direction: column;align-items: center;gap:10px">
+        <img src="../../assets/logo-removebg.png">
+
+      <mat-form-field appearance="outline" style="display: block; width: 50%;">
+        <mat-label>UserName</mat-label>
+        <input matInput [ngModel]="username" placeholder="Enter username" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" style="display: block; width: 50%;">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" [ngModel]="password" placeholder="Enter password" />
+      </mat-form-field>
+
+
+          <div style="width: 50%; display: flex; justify-content: space-evenly; margin-top: 10px;">
+            <button style="background-color: #004F91;color: white;" mat-raised-button (click)="login()">SUBMIT</button>
+
+          </div>
+
+    </div>
+  </div>
