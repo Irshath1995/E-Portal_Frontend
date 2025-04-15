@@ -1,4 +1,6 @@
-<mat-drawer-container class="example-container">
+<ng-container *ngIf="!isLoginRoute(); else loginTemplate">
+
+<mat-drawer-container class="example-container" >
   <mat-drawer #drawer class="drawer" mode="side" opened>
     <div class="container">
       <img class="logo" src="../assets/Infotel India blue.png">
@@ -61,3 +63,9 @@
     <router-outlet ></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>
+
+</ng-container>
+
+<ng-template #loginTemplate>
+  <router-outlet></router-outlet>
+</ng-template>
